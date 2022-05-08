@@ -1,0 +1,23 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /payconiq
+
+spring:
+  application:
+    name: payconiq
+  datasource:
+    url: jdbc:h2:mem:payconiqdb
+    driverClassName: org.h2.Driver
+    username: payconiq
+    password: payconiq
+    initialization-mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true

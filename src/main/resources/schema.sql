@@ -1,0 +1,6 @@
+CREATE TABLE STOCK(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	current_price NUMBER(19,2),
+	last_update TIMESTAMP
+);
